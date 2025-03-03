@@ -1,0 +1,10 @@
+[Unit]
+Description=Run ssh-inhibit-sleep periodically
+
+[Timer]
+OnBootSec=30
+OnUnitActiveSec=30
+Unit=ssh-inhibit-sleep.service
+
+[Install]
+WantedBy=timers.target
